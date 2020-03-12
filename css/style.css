@@ -1,0 +1,118 @@
+/*Colores*/
+:root {
+    
+--fisrt: #0264fb;
+--second: #ffb03a;
+--third: #000000;
+--fourth: #4b4b4b;
+ --white: #ffffff;
+  }
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+  /*Menu*/
+
+.menu{
+    width: 100%;
+    height: 3em;
+    background-color: var(--fisrt);
+}
+
+.menu nav{
+    padding: 1em 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .menu nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+.menu nav a{
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 2em;
+    
+  }
+  
+@media (min-width: 768px) {
+    .menu nav a {
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+
+  }
+
+.menu nav a:hover{
+    
+    color: var(--white);
+    background-color: var(--second);
+    
+  }
+
+  /* Contenido en imagen */
+
+.container{
+    height: 28.165em;
+    background-image: url(../imagenes/Path.png);
+    margin-bottom: 2em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container img{
+    width: 100%;
+    height: 28.165em;
+}
+
+.container1{
+    color: var(--white);
+}
+.container1 a{
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 2em;
+}
+
+.container2 img{
+    width: 25em;
+    height: 20em;
+}
+
+
+/*Contenedores de opciones*/
+
+.Opciones {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2em;
+    border-radius: 0.3em;
+    margin-bottom: 3em;
+  }
+  @media (min-width: 768px) {
+    .servicios_opciones {
+      display: flex;
+      justify-content: space-between;
+    }
+    .service {
+      flex: 0 0 calc(33.3% - 1 em);
+    }
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
